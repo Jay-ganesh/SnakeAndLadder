@@ -1,10 +1,14 @@
 package SnakeAndLadders;
 
+import java.util.Random;
+
 public class SnakeAndLadders {
     public static void main(String[] args) {
-        int position = 0;
-
         System.out.println("Welcome to Snake and Ladder Simulator.");
-        System.out.println("Single player position : "+position);
+        Random random = new Random();
+        int position = 0;
+        int rollDie = random.nextInt(6)+1;
+        System.out.println("Player is at position : "+position);
+        System.out.println("Player rolled : "+rollDie);
     }
 }
